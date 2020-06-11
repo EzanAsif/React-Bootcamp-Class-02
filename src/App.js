@@ -1,26 +1,21 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Dinner from './dinner'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Dinner dishName = "Nihari" />
     </div>
   );
 }
 
 export default App;
+
+// -------------------------
+// ---  POINT TO REMEMBER --
+//              ------------
+// that you can only return one element but inside that one element
+// you can have as many elements as you want but the return fn must 
+// be returning only one element.
